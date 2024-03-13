@@ -3,6 +3,11 @@ package com.chushi.standard.pojo;
 import com.chushi.standard.constant.ResponseConstant;
 import com.chushi.standard.exception.BusinessException;
 import com.chushi.standard.exception.support.ErrorSupport;
+import com.chushi.standard.i18n.I18nConfig;
+import com.chushi.standard.i18n.ResultI18nMessageAssemblerProvider;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @Author 初时y
@@ -15,6 +20,9 @@ import com.chushi.standard.exception.support.ErrorSupport;
  * @ProductName IntelliJ IDEA
  * @Version 1.0
  */
+@ToString
+@Setter
+@Getter
 public class Result<T> implements VO {
 
     /**
@@ -33,8 +41,20 @@ public class Result<T> implements VO {
      */
     private T data;
 
+    /**
+     * 空数据
+     */
+    private static final Void EMPTY_DATA = null;
+
+    /**
+     * 默认成功
+     * 使用单例模式
+     */
+    private static Result<Void> success = new Result<>();
+
     private Result() {
         this.code = ResponseConstant.SUCCESS_CODE;
+        this.message = ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, ResponseConstant.SUCCESS_MESSAGE);
     }
 
     private Result(String message) {
@@ -43,8 +63,16 @@ public class Result<T> implements VO {
     }
 
     private Result(T data) {
-        this.code = ResponseConstant.SUCCESS_CODE;
-        this.data = data;
+        if (data instanceof ErrorSupport) {
+            ErrorSupport errorSupport = (ErrorSupport) data;
+            this.code = ResponseConstant.SUCCESS_CODE;
+            this.data = data;
+            this.message = ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, errorSupport.getMessage());
+        } else {
+            this.code = ResponseConstant.SUCCESS_CODE;
+            this.data = data;
+            this.message = ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, ResponseConstant.SUCCESS_MESSAGE);
+        }
     }
 
 
@@ -60,28 +88,43 @@ public class Result<T> implements VO {
     }
 
     public static Result<Void> success() {
-        return new Result<>("操作成功");
+        if (success != null) {
+            return success;
+        }
+        synchronized (Result.class) {
+            if (success != null) {
+                return success;
+            }
+            success = new Result<>(ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, ResponseConstant.SUCCESS_MESSAGE));
+            return success;
+        }
     }
 
     public static Result<Void> success(String message) {
-        return new Result<>(message, null);
+        return new Result<>(ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, message), Result.EMPTY_DATA);
     }
 
     public static <T> Result<T> success(T data) {
-        // 操作成功考虑国际化的问题
-        return new Result<>("操作成功", data);
+        return new Result<>(ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, ResponseConstant.SUCCESS_MESSAGE), data);
+    }
+
+    public static <T> Result<T> success(String message, T data) {
+        return new Result<>(ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, message), data);
     }
 
     public static Result<Void> fail() {
-        // TODO 支持国际化
-        return new Result<>(ResponseConstant.FAIL_CODE, "操作失败");
+        return new Result<>(ResponseConstant.FAIL_CODE, ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, ResponseConstant.SUCCESS_MESSAGE));
     }
 
     public static Result<Void> fail(ErrorSupport errorSupport) {
-        return new Result<>(errorSupport.getCode(), errorSupport.getMessage());
+        return new Result<>(errorSupport.getCode(), ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, errorSupport.getMessage()));
     }
 
     public static Result<Void> fail(BusinessException businessException) {
-        return new Result<>(businessException.getCode(), businessException.getMessage());
+        return new Result<>(businessException.getCode(), ResultI18nMessageAssemblerProvider.getProvider().assembler(I18nConfig.language, businessException));
+    }
+
+    public boolean isSuccess() {
+        return ResponseConstant.SUCCESS_CODE.equals(this.code);
     }
 }

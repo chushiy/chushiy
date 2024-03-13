@@ -1,6 +1,8 @@
-package com.chushi.standard.pojo;
+package com.chushi.standard.i18n;
 
 import com.chushi.standard.exception.BusinessException;
+
+import java.util.Locale;
 
 /**
  * @Author 初时y
@@ -18,8 +20,17 @@ public interface ResultI18nMessageAssembler {
     /**
      * 返回国际化message
      *
+     * @param language 语言
      * @param businessException 业务异常
-     * @return
+     * @return 返回对应的国际化信息
      */
-    String assembler(BusinessException businessException);
+    String assembler(Locale language,BusinessException businessException);
+
+    /**
+     *
+     * @param language 语言
+     * @param originMessage 原始信息
+     * @return 返回对应的国际化信息
+     */
+    String assembler(Locale language,String originMessage);
 }
