@@ -12,4 +12,8 @@ package com.chushi.standard.support;
  * @Version 1.0
  */
 public interface ModuleSupport {
+
+    String code();
+
+    String name();
 }
