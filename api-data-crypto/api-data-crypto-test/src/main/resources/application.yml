@@ -1,0 +1,8 @@
+spring:
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+      date: yyyy-MM-dd
+  # 日期格式化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
