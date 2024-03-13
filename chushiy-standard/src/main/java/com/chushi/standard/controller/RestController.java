@@ -12,7 +12,6 @@ package com.chushi.standard.controller;
  * @Version 1.0
  */
 @org.springframework.web.bind.annotation.RestController
-public class RestController {
-
+public class RestController extends Controller{
 
 }
