@@ -28,6 +28,7 @@ public interface ErrorSupport {
     /**
      * 错误code
      *  错误码为8位
+     *  第一位 0|1 0表示系统错误
      *  系统错误?1:0+模块code 4位+错误码 3位
      * @return
      */
