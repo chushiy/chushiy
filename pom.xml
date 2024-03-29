@@ -13,6 +13,7 @@
         <module>chushiy-spring-boot-starter</module>
         <module>chushiy-json</module>
         <module>chushiy-exmple</module>
+        <module>chushiy-swagger</module>
     </modules>
 
     <properties>
