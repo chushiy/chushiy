@@ -1,0 +1,7 @@
+chushiy:
+  oss:
+    endpoint: http://localhost:9090
+    region:
+    pathStyleAccess:
+    accessKey: chushiy
+    secretKey: chushiy16670497489

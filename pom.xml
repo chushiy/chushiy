@@ -15,6 +15,7 @@
         <module>chushiy-exmple</module>
         <module>chushiy-swagger</module>
         <module>chusiy-oss-spring-boot-starter</module>
+        <module>chusiy-oss-spring-boot-starter-test</module>
     </modules>
 
     <properties>
