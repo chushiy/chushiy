@@ -17,6 +17,8 @@
         <module>chusiy-oss-spring-boot-starter</module>
         <module>chusiy-oss-spring-boot-starter-test</module>
         <module>chushiy-spring-boot-starter-test</module>
+        <module>chushi-cache</module>
+        <module>chushi-mq</module>
     </modules>
 
     <properties>

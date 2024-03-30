@@ -19,6 +19,8 @@ chushiy
 ├── chushiy-swagger -- swagger
 ├── chusiy-oss-spring-boot-starter -- 自定义OSS starter 开箱即用
 ├── chusiy-oss-spring-boot-starter-test -- 自定义OSS starter Test
+├── chusiy-cache -- 缓存
+├── chusiy-mq -- 消息队列
 └── 
 
 
