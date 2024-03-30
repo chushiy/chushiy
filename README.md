@@ -5,16 +5,20 @@
 
 ```
 chushiy
-├── chushi-standard -- 规范
-├── api-access-limit -- 接口访问限制
-├── api-data-crypto -- 接口数据加解密
-├── api-limit-count -- 接口访问限制
-├── plya -- 玩
-    ├── girl-friend -- 女朋友
-├── study 学习
-    ├── mpj -- mybatis-plus-join
-├── 
-├── 
+├── chushiy-exmple -- 示例
+    ├── api-access-limit -- 接口访问限制
+    ├── api-data-crypto -- 接口数据加解密
+    ├── api-limit-count -- 接口访问限制
+    ├── plya -- 玩
+        ├── girl-friend -- 女朋友
+    ├── study 学习
+        ├── mpj -- mybatis-plus-join
+├── chushiy-json -- json
+├── chushiy-spring-boot-starter -- 自定义starter
+├── chushiy-standard -- 规范
+├── chushiy-swagger -- swagger
+├── chusiy-oss-spring-boot-starter -- 自定义OSS starter 开箱即用
+├── chusiy-oss-spring-boot-starter-test -- 自定义OSS starter Test
 └── 
 
 
