@@ -1,6 +1,6 @@
 package com.chushiy.spring.boot.autoconfigure.enums;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 /**
  * @Author 初时y
@@ -13,14 +13,23 @@ import lombok.AllArgsConstructor;
  * @ProductName IntelliJ IDEA
  * @Version 1.0
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 public enum JSONTypeEnum {
 
+    /**
+     * fastjson
+     */
     FASTJSON("fastjson","fastjson"),
+    /**
+     * gson
+     */
     GSON("gson","gson"),
+    /**
+     * jackson
+     */
     JACKSON("jackson","jackson")
     ;
 
-    private String name;
-    private String desc;
+    private final String name;
+    private final String desc;
 }

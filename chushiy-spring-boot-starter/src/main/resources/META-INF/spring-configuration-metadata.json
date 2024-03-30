@@ -1,14 +1,12 @@
 {
   "properties": [
     {
-      "name": "chushiy.name",
-      "description": "name111"
+      "name": "chushiy",
+      "description": "配置"
+    },
+    {
+      "name": "chushiy.jsonType",
+      "description": "项目中用的json类型"
     }
-//    {
-//      "name": "spring.test.mockmvc.print",
-//      "type": "org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrint",
-//      "description": "MVC Print option.",
-//      "defaultValue": "default"
-//    }
   ]
 }

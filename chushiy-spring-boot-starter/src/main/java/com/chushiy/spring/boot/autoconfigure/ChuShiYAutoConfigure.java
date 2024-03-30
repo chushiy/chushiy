@@ -2,6 +2,7 @@ package com.chushiy.spring.boot.autoconfigure;
 
 import com.chushiy.spring.boot.autoconfigure.properties.ChuShiYProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @Author 初时y
@@ -15,5 +16,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  * @Version 1.0
  */
 @EnableConfigurationProperties(ChuShiYProperties.class)
+@Configuration
 public class ChuShiYAutoConfigure {
 }
