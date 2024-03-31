@@ -1,6 +1,8 @@
 package com.chushiy.standard.spi;
 
+import cn.hutool.core.util.StrUtil;
 import com.chushiy.standard.i18n.ResultI18nMessageAssembler;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Iterator;
 import java.util.ServiceLoader;
@@ -16,12 +18,13 @@ import java.util.ServiceLoader;
  * @ProductName IntelliJ IDEA
  * @Version 1.0
  */
+@Slf4j
 public class ResultI18nMessageAssemblerProvider {
 
     /**
      * 默认供应商的全限定名
      */
-    private static final String DEFAULT_PROVIDER = "com.chushi.standard.i18n.DefaultResultI18nMessageAssembler";
+    private static final String DEFAULT_PROVIDER = "com.chushiy.standard.i18n.DefaultResultI18nMessageAssembler";
 
     private static ResultI18nMessageAssembler resultI18nMessageAssembler;
 
@@ -43,6 +46,7 @@ public class ResultI18nMessageAssemblerProvider {
             Iterator<ResultI18nMessageAssembler> iterator = serviceLoader.iterator();
             if (iterator.hasNext()) {
                 resultI18nMessageAssembler = iterator.next();
+                log.info("使用提供的ResultI18nMessageAssembler:{}", resultI18nMessageAssembler.getClass());
                 return resultI18nMessageAssembler;
             }
             // endregion
@@ -50,9 +54,11 @@ public class ResultI18nMessageAssemblerProvider {
             try {
                 Class<?> aClass = Class.forName(DEFAULT_PROVIDER);
                 resultI18nMessageAssembler = (ResultI18nMessageAssembler) aClass.newInstance();
+                log.info("使用默认的ResultI18nMessageAssembler:{}", DEFAULT_PROVIDER);
                 return resultI18nMessageAssembler;
             } catch (Exception e) {
-                throw new RuntimeException(String.format("ResultI18nMessageAssembler:%s无法被实例化", DEFAULT_PROVIDER), e);
+                log.error("ResultI18nMessageAssembler:{}无法被实例化", DEFAULT_PROVIDER, e);
+                throw new RuntimeException(StrUtil.format("ResultI18nMessageAssembler:{}无法被实例化", DEFAULT_PROVIDER), e);
             }
             // endregion
         }
