@@ -16,13 +16,17 @@ import com.chushiy.standard.pojo.ClientInformation;
 public class ThreadContext {
 
     // private static InheritableThreadLocal<LoginUser> loginTokenThreadLocal = new InheritableThreadLocal<>();
+
+    /**
+     * 客户端信息 clientInformationThreadLocal
+     */
     private static InheritableThreadLocal<ClientInformation> clientInformationThreadLocal = new InheritableThreadLocal<>();
 
-    public static void setClientInformation(ClientInformation clientInformation){
+    public static void setClientInformation(ClientInformation clientInformation) {
         clientInformationThreadLocal.set(clientInformation);
     }
 
-    public static void removeClientInformation(){
+    public static void removeClientInformation() {
         clientInformationThreadLocal.remove();
     }
 }
