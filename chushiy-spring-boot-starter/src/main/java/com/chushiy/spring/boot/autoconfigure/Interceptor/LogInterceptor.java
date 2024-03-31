@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/4 下午 9:06
  * @Description 日志记录拦截器
- * @ProjectName gulimall
- * @PackageName com.chushi.gulimall.common.interceptor
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.spring.boot.autoconfigure.interceptor
  * @ClassName LogInterceptor.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

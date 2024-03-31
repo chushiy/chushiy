@@ -31,11 +31,11 @@ import java.time.Duration;
 import java.util.Arrays;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 1:07
  * @Description redis配置
- * @ProjectName chushi
- * @PackageName com.chushi.apilimitcount.config
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apilimitcount.config
  * @ClassName RedisConfig.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

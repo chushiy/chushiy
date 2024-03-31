@@ -6,11 +6,11 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 1:02
  * @Description 接口限制次数
- * @ProjectName chushi
- * @PackageName com.chushi.api.limit.count
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.api.limit.count
  * @ClassName LimitCount.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

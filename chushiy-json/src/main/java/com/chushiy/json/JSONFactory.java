@@ -11,7 +11,7 @@ import java.util.ServiceLoader;
  * @DateTime 2024/3/24 上午 11:38
  * @Description 工厂模式 返回支持的JSON对象
  * @ProjectName chushiy
- * @PackageName com.chushi.standard.json
+ * @PackageName com.chushiy.json
  * @ClassName JSONFactory.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -3,11 +3,11 @@ package com.chushiy.standard.pojo;
 import java.io.Serializable;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/11/28 下午 11:17
  * @Description pojo基类
- * @ProjectName gulimall
- * @PackageName com.chushi.gulimall.common.pojo.base
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.standard.pojo
  * @ClassName POJO.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

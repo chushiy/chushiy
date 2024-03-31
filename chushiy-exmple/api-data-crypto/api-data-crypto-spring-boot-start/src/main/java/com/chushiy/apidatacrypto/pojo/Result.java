@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:15
  * @Description 统一的返回结果
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.common
+ * @PackageName com.chushiy.apidatacrypto.common
  * @ClassName Result.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

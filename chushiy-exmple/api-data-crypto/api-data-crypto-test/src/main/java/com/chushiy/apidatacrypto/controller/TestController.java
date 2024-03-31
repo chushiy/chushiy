@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 8:24
  * @Description TODO
- * @ProjectName chushi
- * @PackageName com.chushi.apidatacrypto.controller
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apidatacrypto.controller
  * @ClassName TestController.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

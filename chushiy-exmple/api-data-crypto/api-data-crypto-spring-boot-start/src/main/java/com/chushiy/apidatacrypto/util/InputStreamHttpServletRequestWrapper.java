@@ -13,11 +13,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:27
  * @Description 请求流支持多次获取
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.util
+ * @PackageName com.chushiy.apidatacrypto.util
  * @ClassName InputStreamHttpServletRequestWrapper.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

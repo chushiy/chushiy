@@ -8,11 +8,11 @@ import javax.annotation.Resource;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:36
  * @Description api数据加解密配置类
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.config
+ * @PackageName com.chushiy.apidatacrypto.config
  * @ClassName PpiDataCryptoApplicationConfig.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

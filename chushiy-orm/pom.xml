@@ -9,10 +9,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>chushi-cache</artifactId>
+    <artifactId>chushiy-orm</artifactId>
 
     <description>
-        缓存
+        ORM层
     </description>
 
     <properties>

@@ -10,7 +10,7 @@ import java.util.Locale;
  * @DateTime 2024/3/13 下午 5:54
  * @Description 默认的统一返回结果国际化message组装实现
  * @ProjectName chushiy
- * @PackageName com.chushi.standard.pojo
+ * @PackageName com.chushiy.standard.i18n
  * @ClassName DefaultResultI18nMessageAssembler.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

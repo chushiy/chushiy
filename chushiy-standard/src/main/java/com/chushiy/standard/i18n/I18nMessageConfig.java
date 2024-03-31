@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @DateTime 2024/3/13 下午 7:32
  * @Description i18n信息配置
  * @ProjectName chushiy
- * @PackageName com.chushi.standard.i18n
+ * @PackageName com.chushiy.standard.i18n
  * @ClassName I18nMessageConfig.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

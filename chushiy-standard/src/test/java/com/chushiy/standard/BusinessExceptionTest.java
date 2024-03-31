@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  * @DateTime 2024/3/16 下午 5:08
  * @Description TODO
  * @ProjectName chushiy
- * @PackageName com.chushi.standard
+ * @PackageName com.chushiy.standard
  * @ClassName BusinessExceptionTest.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

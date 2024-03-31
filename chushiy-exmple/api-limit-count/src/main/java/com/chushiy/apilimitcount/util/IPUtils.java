@@ -3,11 +3,11 @@ package com.chushiy.apilimitcount.util;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 1:05
  * @Description ip工具类
- * @ProjectName chushi
- * @PackageName com.chushi.apilimitcount.util
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apilimitcount.util
  * @ClassName IPUtils.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

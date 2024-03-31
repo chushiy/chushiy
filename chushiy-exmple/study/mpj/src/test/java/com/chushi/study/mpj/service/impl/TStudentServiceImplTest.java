@@ -20,13 +20,13 @@ import java.util.List;
  * @Email 2283873481@qq.com
  * @DateTime 2024/1/20 下午 6:49
  * @Description TODO
- * @ProjectName chushi
- * @PackageName com.chushi.study.mpj.service.impl
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.study.mpj.service.impl
  * @ClassName TStudentServiceImplTest.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0
  */
-// @ComponentScan("com.chushi.study.mpj")
+// @ComponentScan("com.chushiy.study.mpj")
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.NONE)

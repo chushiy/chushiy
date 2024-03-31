@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  * @DateTime 2024/3/13 下午 8:12
  * @Description TODO
  * @ProjectName chushiy
- * @PackageName com.chushi.standard
+ * @PackageName com.chushiy.standard
  * @ClassName ResultTest.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

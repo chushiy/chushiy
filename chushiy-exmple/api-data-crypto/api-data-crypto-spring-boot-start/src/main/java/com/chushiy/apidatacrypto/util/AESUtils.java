@@ -9,11 +9,11 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:40
  * @Description aes工具类
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.util
+ * @PackageName com.chushiy.apidatacrypto.util
  * @ClassName AESUtils.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

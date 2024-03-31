@@ -6,11 +6,11 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * The type Escape utils.
  *
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023 /12/27 下午 12:03
  * @Description 转义和反转义工具类
  * @ProjectName aipeyao
- * @PackageName com.asm.aipeyao.util.ip
+ * @PackageName com.chushiy.standard.ip
  * @ClassName EscapeUtils.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -11,11 +11,11 @@ import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 8:23
  * @Description Teacher实体类，使用SpringBoot的validation校验
- * @ProjectName chushi
- * @PackageName com.chushi.apidatacrypto.pojo
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apidatacrypto.pojo
  * @ClassName Teacher.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

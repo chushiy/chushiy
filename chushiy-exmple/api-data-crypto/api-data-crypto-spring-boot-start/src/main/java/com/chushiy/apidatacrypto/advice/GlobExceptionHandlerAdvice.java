@@ -15,11 +15,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:21
  * @Description 统一异常处理类
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.advice
+ * @PackageName com.chushiy.apidatacrypto.advice
  * @ClassName GlobExceptionHandlerAdvice.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

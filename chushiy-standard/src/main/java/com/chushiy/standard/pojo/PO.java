@@ -6,11 +6,11 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/11/28 下午 11:21
  * @Description PO基类
  * @ProjectName chushiy
- * @PackageName com.chushiy.standard.pojo.base
+ * @PackageName com.chushiy.standard.pojo
  * @ClassName PO.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

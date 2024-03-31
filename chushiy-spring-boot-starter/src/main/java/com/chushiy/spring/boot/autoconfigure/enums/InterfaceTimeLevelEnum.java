@@ -3,11 +3,11 @@ package com.chushiy.spring.boot.autoconfigure.enums;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/11/27 下午 8:28
  * @Description 接口耗时等级枚举
- * @ProjectName gulimall
- * @PackageName com.chushi.gulimall.common.constant
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.spring.boot.autoconfigure.enums
  * @ClassName InterfaceTimeLevelConstant.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -1,11 +1,11 @@
 package com.chushiy.apiaccesslimit.exception;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 12:51
  * @Description 访问限制异常
- * @ProjectName chushi
- * @PackageName com.chushi.apiaccesslimit.exception
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apiaccesslimit.exception
  * @ClassName AccessLimitException.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

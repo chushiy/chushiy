@@ -23,11 +23,11 @@ import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
 import java.lang.reflect.Type;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:31
  * @Description responseBody自动解密
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.advice
+ * @PackageName com.chushiy.apidatacrypto.advice
  * @ClassName EncryptResponseBodyAdvice.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

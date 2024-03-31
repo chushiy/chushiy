@@ -8,7 +8,7 @@ import lombok.ToString;
  * @Author 初时y
  * @Email 2283873481@qq.com
  * @DateTime 2024/3/24 下午 5:35
- * @Description TODO
+ * @Description 客户端类型
  * @ProjectName chushiy
  * @PackageName com.chushiy.standard.enums
  * @ClassName PlatformEnum.java

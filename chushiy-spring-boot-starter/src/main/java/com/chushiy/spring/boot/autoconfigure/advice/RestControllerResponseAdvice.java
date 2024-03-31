@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * @DateTime 2024/3/24 上午 6:33
  * @Description restful控制器响应包装
  * @ProjectName chushiy
- * @PackageName com.chushi.standard.advice
+ * @PackageName com.chushiy.spring.boot.autoconfigure.advice
  * @ClassName RestControllerResponseAdvice.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

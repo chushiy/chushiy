@@ -9,13 +9,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Email 2283873481@qq.com
  * @DateTime 2024/1/20 下午 6:28
  * @Description TODO
- * @ProjectName chushi
- * @PackageName com.chushi.study.mpj
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.study.mpj
  * @ClassName MPJApplication.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0
  */
-@MapperScan("com.chushi.study.mpj.mapper")
+@MapperScan("com.chushiy.study.mpj.mapper")
 @SpringBootApplication
 public class MPJApplication {
 

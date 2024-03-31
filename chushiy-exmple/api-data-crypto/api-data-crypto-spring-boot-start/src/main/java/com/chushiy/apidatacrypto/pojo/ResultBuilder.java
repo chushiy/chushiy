@@ -4,11 +4,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:16
  * @Description 统一的返回结果构造器
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.common.pojo
+ * @PackageName com.chushiy.apidatacrypto.common.pojo
  * @ClassName ResultBuilder.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

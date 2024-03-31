@@ -6,11 +6,11 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 12:12
  * @Description webmvc配置
- * @ProjectName chushi
- * @PackageName com.chushi.apiaccesslimit.config
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apiaccesslimit.config
  * @ClassName WebMvcConfig.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

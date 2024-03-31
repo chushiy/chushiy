@@ -7,8 +7,8 @@ import java.util.List;
  * @Email 2283873481@qq.com
  * @DateTime 2024/3/12 下午 11:02
  * @Description 默认分页实现
- * @ProjectName chushi
- * @PackageName com.chushi.standard.pojo.page
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.standard.pojo.page
  * @ClassName Page.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -11,7 +11,7 @@ import java.util.Locale;
  * @DateTime 2024/3/13 下午 7:53
  * @Description TODO
  * @ProjectName chushiy
- * @PackageName com.chushi.standard
+ * @PackageName com.chushiy.standard
  * @ClassName LocaleTest.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -9,10 +9,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>chushi-mq</artifactId>
+    <artifactId>chushiy-cache</artifactId>
 
     <description>
-        mp
+        缓存
     </description>
 
     <properties>

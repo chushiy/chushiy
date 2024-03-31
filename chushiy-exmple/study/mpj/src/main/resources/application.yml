@@ -6,11 +6,11 @@ spring:
     password: 123456
 
 mybatis-plus:
-  mapper-locations: classpath:com/chushi/study/mpj/mapper/*Mapper.xml
-  type-aliases-package: com.chushi.study.mpj.pojo
+  mapper-locations: classpath:com/chushiy/study/mpj/mapper/*Mapper.xml
+  type-aliases-package: com.chushiy.study.mpj.pojo
   configuration:
     map-underscore-to-camel-case: true
 
 logging:
   level:
-    com.chushi.study.mpj: debug
+    com.chushiy.study.mpj: debug

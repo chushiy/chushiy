@@ -9,11 +9,11 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/11/27 下午 8:07
  * @Description 实现代码耗时注解切面实现
  * @ProjectName gulimall
- * @PackageName com.chushi.gulimall.common.aspect
+ * @PackageName com.chushiy.spring.boot.autoconfigure.aspect
  * @ClassName CostTimeAspect.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

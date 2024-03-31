@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:26
  * @Description 验证工具类
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.util
+ * @PackageName com.chushiy.apidatacrypto.util
  * @ClassName ValidationUtils.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -5,8 +5,8 @@ package com.chushiy;
  * @Email 2283873481@qq.com
  * @DateTime 2024/2/14 上午 1:03
  * @Description TODO
- * @ProjectName chushi
- * @PackageName com.chushi
+ * @ProjectName chushiy
+ * @PackageName com.chushiy
  * @ClassName GirlFriendMain.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -13,7 +13,7 @@ import java.util.Map;
  * @DateTime 2024/3/24 上午 11:44
  * @Description fastJSON实现
  * @ProjectName chushiy
- * @PackageName com.chushi.standard.json
+ * @PackageName com.chushiy.json
  * @ClassName FastJSON.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

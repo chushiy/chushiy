@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 /**
  * 学生表(TStudent)表数据库访问层
  *
- * @author 初时
+ * @author 初时y
  * @since 2024-01-20 18:40:11
  */
 @Repository

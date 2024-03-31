@@ -6,11 +6,11 @@ import org.springframework.util.CollectionUtils;
 import java.util.List;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 7:22
  * @Description 自定义参数异常
  * @ProjectName api-data-crypto
- * @PackageName com.chushi.apidatacrypto.exception
+ * @PackageName com.chushiy.apidatacrypto.exception
  * @ClassName ParamException.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

@@ -9,8 +9,8 @@ import java.util.List;
  * @Email 2283873481@qq.com
  * @DateTime 2024/3/12 下午 10:34
  * @Description 分页接口
- * @ProjectName chushi
- * @PackageName com.chushi.standard.pojo
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.standard.pojo
  * @ClassName IPage.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

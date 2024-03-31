@@ -14,8 +14,8 @@ import lombok.ToString;
  * @Email 2283873481@qq.com
  * @DateTime 2024/2/8 下午 5:09
  * @Description 统一返回结果 支持国际化使用JAVA SPI机制 提供扩展性
- * @ProjectName chushi
- * @PackageName com.chushi.standard.pojo
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.standard.pojo
  * @ClassName Result.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

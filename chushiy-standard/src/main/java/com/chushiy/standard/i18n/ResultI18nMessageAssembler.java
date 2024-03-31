@@ -9,8 +9,8 @@ import java.util.Locale;
  * @Email 2283873481@qq.com
  * @DateTime 2024/2/8 下午 11:07
  * @Description 统一返回结果国际化message组装
- * @ProjectName chushi
- * @PackageName com.chushi.standard.pojo
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.standard.i18n
  * @ClassName ResultI18nMessageAssembler.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

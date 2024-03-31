@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 /**
  * 班级表(TClass)表服务实现类
  *
- * @author 初时
+ * @author 初时y
  * @since 2024-01-20 18:40:10
  */
 @RequiredArgsConstructor

@@ -1,11 +1,11 @@
 package com.chushiy.apiaccesslimit.constant;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 12:41
  * @Description 访问限制常量
- * @ProjectName chushi
- * @PackageName com.chushi.apiaccesslimit.constant
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apiaccesslimit.constant
  * @ClassName AccessLimitConstant.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

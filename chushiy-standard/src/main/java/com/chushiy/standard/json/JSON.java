@@ -11,7 +11,7 @@ import java.util.Map;
  * @DateTime 2024/3/24 上午 11:30
  * @Description JSON接口
  * @ProjectName chushiy
- * @PackageName com.chushi.standard.json
+ * @PackageName com.chushiy.standard.json
  * @ClassName JSON.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

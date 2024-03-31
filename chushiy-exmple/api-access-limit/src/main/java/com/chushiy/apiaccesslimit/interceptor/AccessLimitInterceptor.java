@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/1 下午 11:45
  * @Description 访问限制功能拦截器
- * @ProjectName chushi
- * @PackageName com.chushi.apiaccesslimit.interceptor
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apiaccesslimit.interceptor
  * @ClassName AccessLimitInterceptor.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0

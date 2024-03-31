@@ -24,11 +24,11 @@ import java.lang.reflect.Method;
 import java.util.Objects;
 
 /**
- * @Author 初时
+ * @Author 初时y
  * @DateTime 2023/12/2 上午 1:04
  * @Description 接口限制次数切面
- * @ProjectName chushi
- * @PackageName com.chushi.apilimitcount.aspect
+ * @ProjectName chushiy
+ * @PackageName com.chushiy.apilimitcount.aspect
  * @ClassName LimitCountAspect.java
  * @ProductName IntelliJ IDEA
  * @Version 1.0
