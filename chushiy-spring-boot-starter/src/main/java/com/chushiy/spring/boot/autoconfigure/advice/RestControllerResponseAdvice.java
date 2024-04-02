@@ -1,8 +1,10 @@
 package com.chushiy.spring.boot.autoconfigure.advice;
 
+import com.chushiy.spring.boot.autoconfigure.annotation.EnableRestControllerResponseAdvice;
 import com.chushiy.standard.pojo.Result;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -27,7 +29,12 @@ public class RestControllerResponseAdvice implements ResponseBodyAdvice<Object> 
     public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
         boolean isResult = returnType.getParameterType().isAssignableFrom(Result.class);
         boolean isModelAndView = returnType.getParameterType().equals(ModelAndView.class);
-        return !isResult && !isModelAndView;
+        //region 如果加了@EnableRestControllerResponseAdvice enable = true正常执行 =false则不包装 没有加该注解也进行包装
+        EnableRestControllerResponseAdvice enableRestControllerResponseAdvice =
+                returnType.getMethod().getAnnotation(EnableRestControllerResponseAdvice.class);
+        //endregion
+        return !isResult && !isModelAndView
+                && (ObjectUtils.isEmpty(enableRestControllerResponseAdvice) || enableRestControllerResponseAdvice.enable());
     }
 
     @Override
