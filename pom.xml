@@ -20,6 +20,7 @@
         <module>chushiy-cache</module>
         <module>chushiy-mq</module>
         <module>chushiy-orm</module>
+        <module>chushiy-code-generator</module>
     </modules>
 
     <properties>

@@ -21,6 +21,8 @@ chushiy
 ├── chusiy-oss-spring-boot-starter-test -- 自定义OSS starter Test
 ├── chusiy-cache -- 缓存
 ├── chusiy-mq -- 消息队列
+├── chusiy-orm -- 消息队列
+├── chushiy-code-generator -- 代码生成器
 └── 
 
 
