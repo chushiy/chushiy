@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.chushiy</groupId>
         <artifactId>api-data-crypto</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
     <artifactId>api-data-crypto-test</artifactId>
@@ -21,7 +21,7 @@
         <dependency>
             <groupId>com.chushiy</groupId>
             <artifactId>api-data-crypto-spring-boot-start</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${chushiy.version}</version>
         </dependency>
 
         <dependency>

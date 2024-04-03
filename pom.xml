@@ -6,8 +6,38 @@
 
     <groupId>com.chushiy</groupId>
     <artifactId>chushiy</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
+    <name>chushiy</name>
+    <description>
+        chushiy
+    </description>
+    <url>https://gitee.com/chushiy/chushiy</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>https://gitee.com/chushiy/chushiy.git</connection>
+        <developerConnection>scm:git:ssh://git@gitee.com:chushiy/chushiy.git</developerConnection>
+        <url>https://gitee.com/chushiy/chushiy</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>chushiy</name>
+            <id>chushiy</id>
+            <email>2283873481@qq.com</email>
+            <roles>
+                <role>Project Manager</role>
+                <role>Architect</role>
+            </roles>
+        </developer>
+    </developers>
+
     <modules>
         <module>chushiy-standard</module>
         <module>chushiy-spring-boot-starter</module>
@@ -24,6 +54,7 @@
     </modules>
 
     <properties>
+        <chushiy.version>${project.version}</chushiy.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -62,6 +93,66 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-cache</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-code-generator</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-json</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-mq</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-cache</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-orm</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-spring-boot-starter</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-standard</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chushiy-swagger</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chushiy</groupId>
+                <artifactId>chusiy-oss-spring-boot-starter</artifactId>
+                <version>${chushiy.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -162,5 +253,73 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <build>
+        <plugins>
+            <!-- central发布插件 -->
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.4.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>chushiy</publishingServerId>
+                    <tokenAuth>true</tokenAuth>
+                </configuration>
+            </plugin>
+            <!-- source源码插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- javadoc插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <configuration>
+                    <!-- jdk1.8要加上，1.7要去掉，否则会报错 -->
+                    <additionalJOptions>
+                        <additionalJOption>-Xdoclint:none</additionalJOption>
+                    </additionalJOptions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+                    <executable>E:\Program Files (x86)\GnuPG\bin\gpg.exe</executable>
+                    <keyname>chushiy</keyname>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
